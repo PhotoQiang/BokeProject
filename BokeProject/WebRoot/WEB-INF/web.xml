@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<filter>
+		<filter-name>charCodeFilter</filter-name>
+		<filter-class>com.photo.action.CharCodeFilter</filter-class>
+		<init-param>
+			<param-name>charcode</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>charCodeFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<servlet>
+		<servlet-name>AddReplyServlet</servlet-name>
+		<servlet-class>com.message.action.AddReplyServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MyMessageServlet</servlet-name>
+		<servlet-class>com.message.action.MyMessageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ShowReplyServlet</servlet-name>
+		<servlet-class>com.message.action.ShowReplyServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>TiaoServlet</servlet-name>
+		<servlet-class>com.message.action.TiaoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddMessageServlet</servlet-name>
+		<servlet-class>com.message.action.AddMessageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Tiao2Servlet</servlet-name>
+		<servlet-class>com.message.action.Tiao2Servlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteMessageServlet</servlet-name>
+		<servlet-class>com.message.action.DeleteMessageServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddPhotoServlet</servlet-name>
+		<servlet-class>com.photo.action.AddPhotoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeletePhotoServlet</servlet-name>
+		<servlet-class>com.photo.action.DeletePhotoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ShowPhotosServlet</servlet-name>
+		<servlet-class>com.photo.action.ShowPhotosServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FriendPhotoServlet</servlet-name>
+		<servlet-class>com.photo.action.FriendPhotoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.loginAndRegister.action.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.loginAndRegister.action.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FindServlet</servlet-name>
+		<servlet-class>com.findpass.action.FindServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MyInfo</servlet-name>
+		<servlet-class>com.userInformation.action.MyInfo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdatePass</servlet-name>
+		<servlet-class>com.userInformation.action.UpdatePass</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>MyInfo2</servlet-name>
+		<servlet-class>com.userInformation.action.MyInfo2</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>com.loginAndRegister.action.Logout</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddFriendServlet</servlet-name>
+		<servlet-class>com.friend.action.AddFriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>MyFriendServlet</servlet-name>
+		<servlet-class>com.friend.action.MyFriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DeleteFriendServlet</servlet-name>
+		<servlet-class>com.friend.action.DeleteFriendServlet</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet>
+		<servlet-name>ShowUserArticle</servlet-name>
+		<servlet-class>com.article.action.ShowUserArticle</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ShowUserArticle</servlet-name>
+		<url-pattern>/showUserArticle.do</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>FirstPageFriendServlet</servlet-name>
+		<servlet-class>com.friend.action.FirstPageFriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>LastPageFriendServlet</servlet-name>
+		<servlet-class>com.friend.action.LastPageFriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>UpPageFriendServlet</servlet-name>
+		<servlet-class>com.friend.action.UpPageFriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>DownPageFriendServlet</servlet-name>
+		<servlet-class>com.friend.action.DownPageFriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>GoPageFriendServlet</servlet-name>
+		<servlet-class>com.friend.action.GoPageFriendServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ComeFriendPage</servlet-name>
+		<servlet-class>com.friend.action.ComeFriendPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Finfo</servlet-name>
+		<servlet-class>com.friend.action.Finfo</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteArticleServlet</servlet-name>
+		<servlet-class>com.article.action.DeleteArticleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateArticleServlet</servlet-name>
+		<servlet-class>com.article.action.UpdateArticleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EditArticleServlet</servlet-name>
+		<servlet-class>com.article.action.EditArticleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddArticleServlet</servlet-name>
+		<servlet-class>com.article.action.AddArticleServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ArticleDemoServlet</servlet-name>
+		<servlet-class>com.article.action.ArticleDemoServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteCommentServlet</servlet-name>
+		<servlet-class>com.article.action.DeleteCommentServlet</servlet-class>
+	</servlet>
+
+
+
+	<servlet>
+		<servlet-name>SendServlet</servlet-name>
+		<servlet-class>com.sendmail.action.SendServlet</servlet-class>
+	</servlet>
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>AddReplyServlet</servlet-name>
+		<url-pattern>/addReplyServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyMessageServlet</servlet-name>
+		<url-pattern>/myMessageServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowReplyServlet</servlet-name>
+		<url-pattern>/showReplyServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>TiaoServlet</servlet-name>
+		<url-pattern>/tiaoServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddMessageServlet</servlet-name>
+		<url-pattern>/addMessageServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Tiao2Servlet</servlet-name>
+		<url-pattern>/tiao2Servlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteMessageServlet</servlet-name>
+		<url-pattern>/deleteMessageServlet.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddPhotoServlet</servlet-name>
+		<url-pattern>/addPhotoServlet.do/upload</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeletePhotoServlet</servlet-name>
+		<url-pattern>/deletePhotoServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowPhotosServlet</servlet-name>
+		<url-pattern>/showPhotosServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FriendPhotoServlet</servlet-name>
+		<url-pattern>/friendPhotoServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddFriendServlet</servlet-name>
+		<url-pattern>/addFriendServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyFriendServlet</servlet-name>
+		<url-pattern>/myFriendServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteFriendServlet</servlet-name>
+		<url-pattern>/deleteFriendServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/registerServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FindServlet</servlet-name>
+		<url-pattern>/findServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyInfo</servlet-name>
+		<url-pattern>/myInfo.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdatePass</servlet-name>
+		<url-pattern>/updatePass.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MyInfo2</servlet-name>
+		<url-pattern>/myInfo2.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>FirstPageFriendServlet</servlet-name>
+		<url-pattern>/firstPageFriendServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LastPageFriendServlet</servlet-name>
+		<url-pattern>/lastPageFriendServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpPageFriendServlet</servlet-name>
+		<url-pattern>/upPageFriendServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DownPageFriendServlet</servlet-name>
+		<url-pattern>/downPageFriendServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GoPageFriendServlet</servlet-name>
+		<url-pattern>/goPageFriendServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ComeFriendPage</servlet-name>
+		<url-pattern>/comeFriendPage.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Finfo</servlet-name>
+		<url-pattern>/finfo.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteArticleServlet</servlet-name>
+		<url-pattern>/deleteArticleServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateArticleServlet</servlet-name>
+		<url-pattern>/updateArticleServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditArticleServlet</servlet-name>
+		<url-pattern>/editArticleServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddArticleServlet</servlet-name>
+		<url-pattern>/addArticleServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ArticleDemoServlet</servlet-name>
+		<url-pattern>/articleDemoServlet.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteCommentServlet</servlet-name>
+		<url-pattern>/deleteCommentServlet.do</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ShowFriendArticle</servlet-name>
+		<servlet-class>com.article.action.ShowFriendArticle</servlet-class>
+	</servlet>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>ShowFriendArticleList</servlet-name>
+		<servlet-class>com.article.action.ShowFriendArticleList</servlet-class>
+	</servlet>
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>AddArticleMess</servlet-name>
+		<servlet-class>com.article.action.AddArticleMess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowFriendArticle</servlet-name>
+		<url-pattern>/ShowFriendArticle.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShowFriendArticleList</servlet-name>
+		<url-pattern>/ShowFriendArticleList.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddArticleMess</servlet-name>
+		<url-pattern>/AddArticleMess.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SendServlet</servlet-name>
+		<url-pattern>/sendServlet.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+</web-app>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fail.html</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+</head>
+
+<body>
+	抱歉：邮件发送失败，请确认邮箱密码或者更换163、QQ邮箱
+	<br>
+	<a href="../mainPage.jsp">跳转回主页</a>
+</body>
+</html>

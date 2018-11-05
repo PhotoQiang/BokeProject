@@ -1,0 +1,115 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <base href="<%=basePath%>">
+    
+    <title>My JSP 'friendMenu.jsp' starting page</title>
+    
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">    
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+<script type="text/javascript" language="javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+			function() {
+				//slides the element with class "menu_body" when mouse is over the paragraph
+				$("#secondpane p.menu_head").mouseover(
+						function() {
+							$(this).css({
+								backgroundImage : "url(images/down.png)"
+							}).next("div.menu_body").slideDown(500).siblings(
+									"div.menu_body").slideUp("slow");
+							$(this).siblings().css({
+								backgroundImage : "url(images/left.png)"
+							});
+						});
+			});
+</script>
+<style type="text/css">
+body {
+	margin: 10px auto;
+	font: 90%/120% Verdana, Arial, Helvetica, sans-serif;
+	color: white;
+	background-color: #dde1e5;
+}
+
+#div {
+	float: left;
+	margin: auto 20px;
+	height: 90%;
+	background-color: #b0cdee;
+}
+
+.menu_list {
+	width: 200px;
+}
+
+.menu_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+	margin: 1px;
+	font-weight: bold;
+	background: #839baa url(left.png) center right no-repeat;
+}
+
+.menu_body {
+	display: none;
+}
+
+.menu_body a {
+	display: block;
+	color: #006699;
+	background-color: #ffffff;
+	padding-left: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.menu_body a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+</style>
+  </head>
+  
+  <body>
+    	<div id="div">
+		<!--This is the second division of right-->
+		<p>
+			<strong>&nbsp;&nbsp;博动博客网</strong>
+		</p>
+		<div class="menu_list" id="secondpane">
+			<!--Code for menu starts here-->
+			<p class="menu_head">文章</p>
+			<div class="menu_body">
+				<a  href="articleList.jsp" target="iframe">文章列表</a> <a href="#">写文章</a> <a href="#">Link-3</a>
+			</div>
+			<p class="menu_head">相册</p>
+			<div class="menu_body">
+				<a  href="photoList.jsp" target="iframe" >我的相册</a> <a href="#">创建新相册</a> <a href="#">Link-3</a>
+			</div>
+			<p class="menu_head">留言</p>
+			<div class="menu_body">
+				<a  href="message.jsp" target="iframe">留言板</a> <a href="#">Link-2</a> <a href="#">Link-3</a>
+			</div>
+			<p class="menu_head">个人信息</p>
+			<div class="menu_body">
+				<a  href="myInfo.jsp" target="iframe">修改个人信息</a> <a href="#">修改密码</a> <a href="#">Link-3</a>
+			</div>
+		</div>
+		<!--Code for menu ends here-->
+	</div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>登陆</title>
+<style>
+body {
+	background-color: #dbdfe3;
+	text-align: center;
+	font-family: 微软雅黑;
+}
+
+#reg{
+	margin-left:40%;
+}
+div a {
+	text-decoration: none;
+}
+#content{
+	float:left;
+	background-color: #b0cdee;
+	margin:10% 5% 0 15%;
+	width:30%;
+	height:70%;
+}
+#article{
+	float:left;
+	background-color: #dbdfe3;
+	margin:5%;
+	width:90%;
+	height:91%;
+}
+#log{
+	float:left;
+	margin:10% 15% 0 0;
+	width:30%;
+	font-size:20px;
+}
+#button {
+	margin-top: 10px;
+	width: 100px;
+	height: 38px;
+	background-image: url(../images/login.jpg);
+	background-repeat: no-repeat;
+}
+#input {
+	margin-top: 10px;
+	width: 200px;
+	height: 30px;
+	background-color: #dbdfe3;
+	border:1px solid #144264;
+}
+#link {
+	font-size:12px;
+}
+
+</style>
+</head>
+
+<body>
+	<div id="main">
+		<div id="reg"><a href="/BokeProject/logAndReg/registor.jsp">还没有账号？亲，注册一个吧<img src="../images/reg.jpg"/></a></div>
+		<div id="content">
+		<div id="article">此处加入文章内容</div>
+		</div>
+		<div id="log">
+			<img src="../images/logo1.jpg" />
+			<img src="../images/word1.jpg" /><br/><br/>
+			<form action="/BokeProject/loginServlet.do" method="post">
+				账号<input id="input" type="text" name="userName" value="请输入登陆账号" /><br/>
+				密码<input id="input" type="password" name="password" value="" /><br /> <input
+				id="button" type="submit" value=" " />
+			</form>
+			<a href="personInfo/findPass.jsp">忘记密码？</a>
+			<div id="link">
+			<a href="http://blog.sina.com.cn/">新浪博客</a> | <a href="http://www.diandian.com/">点点</a> | <a href="http://t.qq.com/">腾讯微博</a> | <a href="#">站点介绍</a><br/><br/> 
+			©博动©<br/>
+			<img src="../images/welcome.gif" />欢迎使用<img src="../images/welcome.gif" />
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+
+<title>注册</title>
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+<style type="text/css">
+body {
+	background-color: #dbdfe3;
+	text-align: center;
+	font-family: 微软雅黑;
+}
+
+#main {
+	background-color: white;
+	margin: 8% 8% 0 12%;
+	width: 70%;
+	height: 70%;
+}
+
+#content {
+	float: left;
+	margin: 20% 10% 0 10%;
+	width: 30%;
+	height: 70%;
+}
+
+#log {
+	float: left;
+	margin: 10% auto;
+	width: 30%;
+	font-size: 20px;
+}
+
+#button {
+	margin-top: 10px;
+	width: 58px;
+	height: 28px;
+	background-image: url(../images/reg.jpg);
+	background-repeat: no-repeat;
+}
+
+#input {
+	margin-top: 10px;
+	width: 200px;
+	height: 30px;
+	background-color: #dbdfe3;
+	border: 1px solid #144264;
+}
+
+#link {
+	font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+	<div id="main">
+		<div id="content">
+			<img src="../images/logo1.jpg" style="float:left" /> <img
+				src="../images/word1.jpg" /><br />
+		</div>
+		<div id="log">
+			<br />
+			<form action="/BokeProject/registerServlet.do" method="post" >
+				电子邮箱<input id="input" type="text" name="userName" value="" />${repeat}<br />
+				创建密码<input id="input" type="password" name="password" value="" /><br />
+				<input type="checkbox"  name="checked" value="1" />阅读并同意用户协议<br /> ${message}<br>
+				<input id="button" type="submit" value=" "  />
+			</form>
+			<div id="link">
+				<br /> ©博动©<br />欢迎使用
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

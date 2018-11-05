@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/weibo/!svn/ver/168/BokeProject/src/com/friend/action
+END
+DeleteFriendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weibo/!svn/ver/117/BokeProject/src/com/friend/action/DeleteFriendServlet.java
+END
+GoPageFriendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weibo/!svn/ver/142/BokeProject/src/com/friend/action/GoPageFriendServlet.java
+END
+DownPageFriendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weibo/!svn/ver/118/BokeProject/src/com/friend/action/DownPageFriendServlet.java
+END
+FirstPageFriendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/weibo/!svn/ver/118/BokeProject/src/com/friend/action/FirstPageFriendServlet.java
+END
+Finfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/weibo/!svn/ver/168/BokeProject/src/com/friend/action/Finfo.java
+END
+MyFriendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/weibo/!svn/ver/280/BokeProject/src/com/friend/action/MyFriendServlet.java
+END
+AddFriendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/weibo/!svn/ver/120/BokeProject/src/com/friend/action/AddFriendServlet.java
+END
+ComeFriendPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/weibo/!svn/ver/155/BokeProject/src/com/friend/action/ComeFriendPage.java
+END
+LastPageFriendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/weibo/!svn/ver/121/BokeProject/src/com/friend/action/LastPageFriendServlet.java
+END
+UpPageFriendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/weibo/!svn/ver/121/BokeProject/src/com/friend/action/UpPageFriendServlet.java
+END

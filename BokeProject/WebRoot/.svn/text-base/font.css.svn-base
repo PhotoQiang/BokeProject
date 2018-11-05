@@ -1,0 +1,27 @@
+@charset "utf-8";
+/**
+* @filename: global.css
+* @website:
+* @version:
+* @updated: 2012-10-19T14:30
+* @author: junluo
+* @explain： 公共样式
+*/
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#hr {
+	font-size:20px;
+	font-family: 微软雅黑;
+}
+#input {
+	margin-top: 10px;
+	width: 200px;
+	height: 30px;
+	background-color: #dbdfe3;
+	border: 1px solid #144264;
+	font-size:20px;
+	font-family: 微软雅黑;
+}

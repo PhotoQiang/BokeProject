@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/weibo/!svn/ver/260/BokeProject/WebRoot/message
+END
+MyMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/weibo/!svn/ver/263/BokeProject/WebRoot/message/MyMessage.jsp
+END
+showReply.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/weibo/!svn/ver/246/BokeProject/WebRoot/message/showReply.jsp
+END
+MessagetoFriend.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/weibo/!svn/ver/260/BokeProject/WebRoot/message/MessagetoFriend.jsp
+END
+replyMessage.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/weibo/!svn/ver/270/BokeProject/WebRoot/message/replyMessage.jsp
+END
